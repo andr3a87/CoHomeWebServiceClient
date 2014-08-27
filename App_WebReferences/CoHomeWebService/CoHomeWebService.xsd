@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ws/" targetNamespace="http://ws/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="getlocation" type="tns:getlocation" />
+  <xs:element name="getlocationResponse" type="tns:getlocationResponse" />
+  <xs:complexType name="getlocation">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getlocationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
